@@ -78,8 +78,8 @@ Dans cet exercice nous allons simuler un temps long avec :
 ```tsx
 // app/parralel/@admin/page.tsx
 await new Promise((resolve) => {
-    setTimeout(resolve, 5000)
- })
+  setTimeout(resolve, 5000)
+})
 ```
 
 - **🐶** Gère le `loading` en wrappant le rendu de la page `admin` avec `<Suspense>`
@@ -87,7 +87,7 @@ await new Promise((resolve) => {
 ```tsx
 //Layout.tsx
 <Suspense fallback={<div>Loading...</div>}>
- {role === 'admin' ? admin : undefined}
+  {role === 'admin' ? admin : undefined}
 </Suspense>
 ```
 
