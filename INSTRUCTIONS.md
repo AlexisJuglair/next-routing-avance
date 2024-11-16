@@ -17,7 +17,7 @@ Il a une convention avec `next` qui permet de créer ce type de route et de réc
 export default async function Page({
   params,
 }: {
-  params: Promise<{ slug: string }>
+  params: Promise<{slug: string}>
 }) {
   const slug = (await params).slug
   return <div>My Post: {slug}</div>
@@ -90,15 +90,15 @@ Dans cet exercice tu vas devoir gérer tous les segments de sous catégories.
 
 ```tsx
 // shop/[category]/[...subcategories]/page.tsx
- <div>
-    My SUB Categories :
-    <ul>
-      {params.subcategories.map((cat, idx) => (
-        <li key={idx}>{cat}</li>
-      ))}
-    </ul>
-    <Link href="/final/dynamic/shop/home">back</Link>
-  </div>
+<div>
+  My SUB Categories :
+  <ul>
+    {params.subcategories.map((cat, idx) => (
+      <li key={idx}>{cat}</li>
+    ))}
+  </ul>
+  <Link href="/final/dynamic/shop/home">back</Link>
+</div>
 ```
 
 Fichiers
