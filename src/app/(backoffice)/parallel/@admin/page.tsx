@@ -2,9 +2,9 @@ const Page = async () => {
   // 2. 🚀 Loading
   // ⛏️ supprime les commentaires ci-dessous pour simuler un RSC qui charge en 3 secondes
 
-  // await new Promise((resolve) => {
-  //   setTimeout(resolve, 3000)
-  // })
+  await new Promise((resolve) => {
+    setTimeout(resolve, 3000)
+  })
 
   return (
     <div className="mx-auto max-w-4xl p-5">
